@@ -9,6 +9,9 @@
 <body>
 
 <div class="container">
+    <div class="jumbotron">
+        <h1>@yield('header')</h1>
+    </div>
     @yield('content')
 </div>
 

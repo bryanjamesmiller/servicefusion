@@ -4,6 +4,16 @@
     Create a record | Service Fusion
 @endsection
 
+@section('header')
+    Create a new record
+@endsection
+
 @section('content')
-    <h1>Create a new record</h1>
+    {{-- firstname, lastname, date of birth and zip-code --}}
+    {!! Form::open(array('url' => '')) !!}
+
+    {!!  Form::label('firstname', 'First Name') !!}
+    {!! Form::text('firstname') !!}
+
+    {!! Form::close() !!}
 @endsection
