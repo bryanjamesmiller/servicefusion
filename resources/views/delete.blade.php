@@ -1,15 +1,15 @@
 @extends('_base')
 
 @section('title')
-    Create a record | Service Fusion
+    Update a record | Service Fusion
 @endsection
 
 @section('header')
-    Create a new record
+    Update a saved record
 @endsection
 
 @section('content')
-    {!! Form::open(array('url' => '/photo/create')) !!}
+    {!! Form::open(array('url' => '')) !!}
 
     <div class="form-group">
         {!! Form::label('firstname', 'First Name') !!}

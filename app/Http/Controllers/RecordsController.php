@@ -37,7 +37,7 @@ class RecordsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        echo ('hi');
     }
 
     /**

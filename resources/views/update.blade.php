@@ -1,15 +1,15 @@
 @extends('_base')
 
 @section('title')
-    Create a record | Service Fusion
+    Delete a record | Service Fusion
 @endsection
 
 @section('header')
-    Create a new record
+    Delete a record
 @endsection
 
 @section('content')
-    {!! Form::open(array('url' => '/photo/create')) !!}
+    {!! Form::open(array('url' => '/records/create')) !!}
 
     <div class="form-group">
         {!! Form::label('firstname', 'First Name') !!}
