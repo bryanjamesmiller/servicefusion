@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container" id="my_container">
     <div class="jumbotron">
         <h1>@yield('header')</h1>
     </div>

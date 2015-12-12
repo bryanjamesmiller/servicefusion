@@ -6,8 +6,9 @@ and uses CRUD functionality.  You can view this web app live at http://servicefu
 ## Features
 
 RESTful routing for CRUD functionality.
-Javascript data validation and warnings for user input (public/js/custom.js).
-Server-side data validation (app/Http/Requests/UserRegistrationRequest.php).
+Utilized the Blade templating engine to reduce repetition in HTML pages.
+Javascript data validation and warnings for user input on both the create and update pages (public/js/custom.js).
+Server-side data validation on both the create and update pages (app/Http/Requests/UserRegistrationRequest.php).  Try entering an invalid date to see the server-side input validation at work.
 Made use of the Google Maps API to produce some details about the zip codes that get entered (displayed on the http://servicefusion.grat.xyz/records page).
 Responsive design using Bootstrap 3 framework - try resizing http://servicefusion.grat.xyz/records
 Javascript injection protection through my custom-made middleware (app/Http/Middleware/NoBracketsAllowed.php).  Try entering a <script> tag into one of the input fields and try to submit it to see the result.

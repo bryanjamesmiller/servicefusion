@@ -36,7 +36,7 @@ class UserRegistrationRequest extends Request
         return [
             'firstname' => 'required',
             'lastname' => 'required',
-            'birthday' => 'required',
+            'birthday' => 'required|date',
             'zipcode' => 'integer|required|regex:/^\d{5}$/|',
         ];
     }

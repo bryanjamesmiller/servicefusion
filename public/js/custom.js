@@ -79,8 +79,11 @@ function inputValidation() {
 
     //Integer input validation
     var zip = document.getElementById("zip");
+    testZipDigits();
+    noEmptyFieldsCheck();
     document.getElementById("zip_hint").style.display = "none";
     zip.addEventListener("keyup", testZipDigits);
+    document.getElementById("my_container").addEventListener("click", testZipDigits);
     function testZipDigits() {
         //regex expression created with help from https://www.debuggex.com
         if (/^\d{5}$/.test(zip.value)) {
@@ -94,6 +97,7 @@ function inputValidation() {
 
     //Button error checking
     document.addEventListener("keyup", noEmptyFieldsCheck);
+    document.getElementById("my_container").addEventListener("click", noEmptyFieldsCheck);
     function noEmptyFieldsCheck() {
         if (zip.value == '') {
             document.getElementById("button_zip_hint").style.display = "block";
