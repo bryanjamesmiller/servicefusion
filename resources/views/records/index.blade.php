@@ -5,7 +5,7 @@
 @endsection
 
 @section('header')
-    List all records
+    Complete list of records
 @endsection
 
 @section('content')

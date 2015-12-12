@@ -13,6 +13,25 @@
     <div class="jumbotron">
         <h1>@yield('header')</h1>
     </div>
+    @if (count($errors) > 0)
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    @if(session()->has('flash_message'))
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-10 alert-message alert-message-info">
+                    <h4>Alert Message</h4>
+                    <p id="flash_message">{!! Session::pull('flash_message') !!}</p>
+                </div>
+            </div>
+        </div>
+    @endif
     @yield('content')
 </div>
 

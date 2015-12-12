@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Record;
+use App\Http\Requests\UserRegistrationRequest;
+
 
 class RecordsController extends Controller
 {
@@ -37,7 +39,7 @@ class RecordsController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(UserRegistrationRequest $request)
     {
         $input = $request->all();
         Record::create($input);
