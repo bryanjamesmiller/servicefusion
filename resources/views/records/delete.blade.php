@@ -1,15 +1,15 @@
 @extends('_base')
 
 @section('title')
-    Update a record | Service Fusion
+    Delete a record | Service Fusion
 @endsection
 
 @section('header')
-    Update a saved record
+    Delete record {!! $record->id !!} from the database?
 @endsection
 
 @section('content')
-    {!! Form::open(array('url' => '')) !!}
+    {!! Form::open(array('method' => 'PATCH', 'action' => 'RecordsController@update', $record->id)) !!}
 
     <div class="form-group">
         {!! Form::label('firstname', 'First Name') !!}

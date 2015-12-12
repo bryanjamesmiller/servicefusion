@@ -22,7 +22,7 @@
                 <p><kbd>Updated at:</kbd>  {{ $record->updated_at }}</p>
             </div>
             <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="edit_or_delete_links"><a href="/records/{{ $record->id }}" class="text-success">Edit Record #{{ $record->id }}</a></div>
+                <div class="edit_or_delete_links"><a href="/records/{{ $record->id }}/edit" class="text-success">Edit Record #{{ $record->id }}</a></div>
             </div>
             <div class="col-lg-4 col-md-6 col-xs-12">
                 <div class="edit_or_delete_links"><a href="/records/{{ $record->id }}" class="text-danger">Delete Record #{{ $record->id }}</a></div>

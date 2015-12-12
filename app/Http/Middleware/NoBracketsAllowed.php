@@ -21,7 +21,7 @@ class NoBracketsAllowed
         $inputs = $request->all();
         foreach($inputs as $input){
             if(strpos($input, '<') || strpos($input, '>')){
-                return back()->with('flash_message', '<span class="glyphicon glyphicon-exclamation-sign"></span> You entered an invalid symbol for a form field.  Please try again without that symbol.')
+                return back()->with('flash_message', '<span class="glyphicon glyphicon-exclamation-sign"></span> You entered an invalid tag for a form field.  Please try again without "<" and ">".')
                     ->withInput();
             }
         }

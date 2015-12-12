@@ -65,17 +65,17 @@ class RecordsController extends Controller
      */
     public function edit(Record $record)
     {
-        return view('records.edit', compact('record'));
+        return view('records.update', compact('record'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request $request
+     * @param UserRegistrationRequest $request
      * @param Record $record
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Record $record)
+    public function update(UserRegistrationRequest $request, Record $record)
     {
         // update all automatically does the input::get('my_name') stuff for you
         // as long as it's mass assignable.
