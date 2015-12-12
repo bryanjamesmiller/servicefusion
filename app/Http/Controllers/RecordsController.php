@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Record;
 
 class RecordsController extends Controller
 {
@@ -16,7 +17,8 @@ class RecordsController extends Controller
      */
     public function index()
     {
-        //
+        $records = Record::all();
+        return view('records.index', compact('records'));
     }
 
     /**
@@ -26,7 +28,7 @@ class RecordsController extends Controller
      */
     public function create()
     {
-        //
+        return view('records.create');
     }
 
     /**
@@ -43,44 +45,47 @@ class RecordsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param Record $record
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Record $record)
     {
-        //
+        return view('records.show', compact('record'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param Record $record
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Record $record)
     {
-        //
+        return view('records.edit', compact('record'));
     }
 
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request $request
+     * @param Record $record
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Record $record)
     {
-        //
+        // update all automatically does the input::get('my_name') stuff for you
+        // as long as it's mass assignable.
+        $record->update($request->all());
+        return redirect('records');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param Record $record
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Record $record)
     {
         //
     }
