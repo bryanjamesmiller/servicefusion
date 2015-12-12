@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    {!! Form::open(array('url' => '/photo/create')) !!}
+    {!! Form::open(array('url' => '/records')) !!}
 
     <div class="form-group">
         {!! Form::label('firstname', 'First Name') !!}
@@ -31,7 +31,7 @@
         {!! Form::text('zipcode', '', array('class' => 'form-control')) !!}
     </div>
 
-    <button type="submit" class="btn btn-default">Submit</button>
+    <button type="submit" class="btn btn-info form-control">Submit</button>
 
     {!! Form::close() !!}
 @endsection

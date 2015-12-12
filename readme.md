@@ -8,5 +8,5 @@ and uses CRUD functionality.  You can view this web app live at http://servicefu
 Cross-site request forgery (CSRF) protection
 Data input validation
 Bootstrap 3 framework
-Javascript injection protection
-SQL injection protection
+Javascript injection protection through my custom-made service provider.
+SQL injection protection through Eloquent ORM (Object-relational mapping).
