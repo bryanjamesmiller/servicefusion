@@ -39,7 +39,9 @@ class RecordsController extends Controller
      */
     public function store(Request $request)
     {
-        return $request->all();
+        $input = $request->all();
+        Record::create($input);
+        return redirect('records');
     }
 
     /**
