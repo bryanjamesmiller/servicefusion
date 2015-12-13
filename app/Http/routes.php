@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', function () {
-    return view('records.create');
+    return view('home');
 });
 
 Route::resource('records', 'RecordsController');

@@ -43,6 +43,7 @@ class RecordsController extends Controller
     {
         $input = $request->all();
         Record::create($input);
+        session()->flash('flash_message', 'Record stored successfully.');
         return redirect('records');
     }
 
@@ -80,6 +81,7 @@ class RecordsController extends Controller
         // update all automatically does the input::get('my_name') stuff for you
         // as long as it's mass assignable.
         $record->update($request->all());
+        session()->flash('flash_message', 'Record updated successfully.');
         return redirect('records');
     }
 

@@ -1,6 +1,5 @@
 
 window.onload = function() {
-
     // Get the Google Maps API information for each zip code for the "list all records" page
     var zip_code_els = document.getElementsByClassName("log_input");
     var zip_code_outs = document.getElementsByClassName("log_output");
