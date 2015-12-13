@@ -9,7 +9,6 @@ use App\Http\Controllers\Controller;
 use App\Record;
 use App\Http\Requests\UserRegistrationRequest;
 
-
 class RecordsController extends Controller
 {
     /**
@@ -55,6 +54,10 @@ class RecordsController extends Controller
      */
     public function show(Record $record)
     {
+        /*
+        * I am able to include the Record $record parameter thanks to route-model-binding.
+        * See RouteServiceProvider.php line with $router->model('records', 'App\Record');
+        */
         return view('records.show', compact('record'));
     }
 
@@ -78,8 +81,8 @@ class RecordsController extends Controller
      */
     public function update(UserRegistrationRequest $request, Record $record)
     {
-        // update all automatically does the input::get('my_name') stuff for you
-        // as long as it's mass assignable.
+        // The below line automatically gets the input::get('my_name') for each variable that is
+        // set up for mass assignment in the Record model.
         $record->update($request->all());
         session()->flash('flash_message', 'Record updated successfully.');
         return redirect('records');
@@ -93,6 +96,9 @@ class RecordsController extends Controller
      */
     public function destroy(Record $record)
     {
-        //
+        $num = $record->id;
+        $record->delete();
+        session()->flash('flash_message', 'Record #' . $num . ' deleted successfully.');
+        return redirect('records');
     }
 }

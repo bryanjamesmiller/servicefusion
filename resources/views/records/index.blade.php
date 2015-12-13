@@ -25,7 +25,11 @@
                 <div class="edit_or_delete_links"><a href="/records/{{ $record->id }}/edit" class="btn btn-warning" role="button">Edit Record #{{ $record->id }}</a></div>
             </div>
             <div class="col-md-3 col-sm-6 col-xs-12">
-                <div class="edit_or_delete_links"><a href="/records/{{ $record->id }}" class="btn btn-danger" role="button">Delete Record #{{ $record->id }}</a></div>
+                {!! Form::open(['method' => 'DELETE', 'route'=> ['records.destroy', $record->id]]) !!}
+                <div class="edit_or_delete_links">
+                    {!! Form::submit ('Delete Record', ['class' => 'btn btn-danger']) !!}
+                </div>
+                {!! Form::close() !!}
             </div>
         </div>
         <hr>
