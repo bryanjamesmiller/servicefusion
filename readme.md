@@ -11,7 +11,7 @@ Javascript data validation and warnings for user input on both the create and up
 Server-side data validation on both the create and update pages (app/Http/Requests/UserRegistrationRequest.php).  Try entering an invalid date to see the server-side input validation at work.
 Made use of the Google Maps API to produce some details about the zip codes that get entered (displayed on the http://servicefusion.grat.xyz/records page).
 Responsive design using Bootstrap 3 framework - try resizing http://servicefusion.grat.xyz/records
-Javascript injection protection through my custom-made middleware (app/Http/Middleware/NoBracketsAllowed.php).  Try entering a <script> tag into one of the input fields and try to submit it to see the result.
+Javascript injection protection through my custom-made middleware (app/Http/Middleware/NoBracketsAllowed.php).  Try entering a script tag into one of the input fields and try to submit it to see the result.
 Automatic SQL injection protection through Eloquent ORM (Object-relational mapping).
 Cross-site request forgery (CSRF) protection by using Laravel forms correctly.
 Customized layer of CSS (public/css/custom.css).
