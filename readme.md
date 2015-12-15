@@ -16,3 +16,5 @@ and uses CRUD functionality.  You can view this web app live at http://servicefu
 * Used route-model binding (http://laravel.com/docs/5.1/routing#route-model-binding), a nice feature of Laravel 5.1 that injects the right model instance into the corresponding controller.
 * Cross-site request forgery (CSRF) protection by using Laravel forms correctly.
 * Customized layer of CSS (public/css/custom.css).
+* Entire site's HTML validates as HTML5 (https://validator.w3.org)
+* CSS validates as CSS3 (https://jigsaw.w3.org/css-validator/)
