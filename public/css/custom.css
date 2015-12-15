@@ -11,6 +11,7 @@ footer{
 
 .jumbotron h1 {
     color:#337ab7;
+    text-align:center;
 }
 
 .index_titles{
@@ -98,4 +99,30 @@ footer{
 .alert-message-notice h4
 {
     color: #444;
+}
+
+.allow_wrap{
+    word-wrap: break-word;
+}
+
+@media (max-width: 720px) {
+    .navbar-brand
+    {
+        font-size:14px;
+    }
+    .jumbotron{
+        margin-top:10%;
+    }
+}
+
+@media (max-width: 577px) {
+    .jumbotron{
+        margin-top:14%;
+    }
+}
+
+@media (max-width: 400px) {
+    .jumbotron{
+        margin-top:17%;
+    }
 }

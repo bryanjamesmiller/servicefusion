@@ -36,3 +36,7 @@
     @endforeach
 @endsection
 
+@section('extra_js')
+    <script src="/js/googleinfo.js"></script>
+@endsection
+

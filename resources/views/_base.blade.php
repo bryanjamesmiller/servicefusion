@@ -22,7 +22,7 @@
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="/">Home</a></li>
-                <li><a href="/records/">All Records</a></li>
+                <li><a href="/records">All Records</a></li>
                 <li><a href="/records/create">Create a New Record</a></li>
             </ul>
         </div>
@@ -57,14 +57,17 @@
 </div>
 
 <footer class="container-fluid">
-    <h3>Web app created by:</h3>
-    <p>Bryan Miller</p>
-    <p><a href="mailto:bryanjamesmiller@g.harvard.edu" target="_top">bryanjamesmiller@g.harvard.edu</a></p>
-    <p>901-605-7007</p>
+    <div class="col-xs-12">
+        <h3>Web app created by:</h3>
+        <p>Bryan Miller<br>
+            <a href="mailto:bryanjamesmiller@g.harvard.edu" target="_top">bryanjamesmiller@g.harvard.edu</a><br>
+            901-605-7007</p>
+    </div>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="/js/custom.js"></script>
+@yield('extra_js')
 </body>
 </html>

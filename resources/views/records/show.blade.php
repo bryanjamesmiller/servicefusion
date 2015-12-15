@@ -15,3 +15,7 @@
         <p>Zip Code: {{ $record->zipcode }}</p>
         <hr>
 @endsection
+
+@section('extra_js')
+    <script src="/js/googleinfo.js"></script>
+@endsection
