@@ -21,7 +21,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="/records">All Records</a></li>
                 <li><a href="/records/create">Create a New Record</a></li>
             </ul>
@@ -67,7 +67,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-<script src="/js/custom.js"></script>
+<script src="/js/menu_highlight.js"></script>
 @yield('extra_js')
 </body>
 </html>
