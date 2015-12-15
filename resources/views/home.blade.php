@@ -28,6 +28,5 @@
         <li>Used <a href="http://laravel.com/docs/5.1/routing#route-model-binding">route-model binding, a nice feature of Laravel 5.1</a> that injects the right model instance into the corresponding controller.</li>
         <li>Cross-site request forgery (CSRF) protection by using Laravel forms correctly.</li>
         <li>Customized layer of CSS (public/css/custom.css).</li>
-        <li>I made use of Laravel 5.1 instead of Yii, but hopefully you will permit Laravel as a solid alternative.</li>
     </ul>
 @endsection
