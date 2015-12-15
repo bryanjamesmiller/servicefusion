@@ -19,7 +19,7 @@
 
 <div class="form-group">
     {!! Form::label('zipcode', 'Zip Code') !!}
-    {!! Form::text('zipcode', null, array('class' => 'form-control', 'id' => 'zip')) !!}
+    {!! Form::text('zipcode', null, array('class' => 'form-control', 'id' => 'zipcode')) !!}
     <span class="text-danger" id="zip_hint">The Zip Code must be a 5-digit integer.</span>
     <div class="text-danger" id="button_zip_hint">The "Zip Code" field must not be empty.</div>
 </div>

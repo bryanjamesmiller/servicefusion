@@ -22,7 +22,7 @@ function inputValidation() {
     button.disabled = true;
 
     //Integer input validation
-    var zip = document.getElementById("zip");
+    var zip = document.getElementById("zipcode");
     testZipDigits();
     noEmptyFieldsCheck();
     document.getElementById("zip_hint").style.display = "none";

@@ -25,8 +25,9 @@
         <li>Responsive design using Bootstrap 3 framework - try resizing <a href="http://servicefusion.grat.xyz/records">the "Complete list of records" page</a>, for example.</li>
         <li>Javascript injection protection through my custom-made middleware (<span class="allow_wrap">app/Http/Middleware/NoBracketsAllowed.php</span>).  Try entering a <code>&lt;script&gt;</code> tag into one of the input fields and try to submit it to see the result.</li>
         <li>Automatic SQL injection protection through Eloquent ORM (Object-relational mapping).</li>
+        <li>Used <a href="http://laravel.com/docs/5.1/routing#route-model-binding">route-model binding, a nice feature of Laravel 5.1</a> that injects the right model instance into the corresponding controller.</li>
         <li>Cross-site request forgery (CSRF) protection by using Laravel forms correctly.</li>
         <li>Customized layer of CSS (public/css/custom.css).</li>
-        <li>I made use of Laravel instead of Yii, but hopefully you will permit Laravel as a solid alternative.</li>
+        <li>I made use of Laravel 5.1 instead of Yii, but hopefully you will permit Laravel as a solid alternative.</li>
     </ul>
 @endsection
