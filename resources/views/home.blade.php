@@ -28,7 +28,7 @@
         <li>Used <a href="http://laravel.com/docs/5.1/routing#route-model-binding">route-model binding, a nice feature of Laravel 5.1</a> that injects the right model instance into the corresponding controller.</li>
         <li>Cross-site request forgery (CSRF) protection by using Laravel forms correctly.</li>
         <li>Customized layer of CSS (public/css/custom.css).</li>
-        <li>Entire site's HTML validates as HTML5 (https://validator.w3.org)</li>
-        <li>CSS validates as CSS3 (https://jigsaw.w3.org/css-validator/)</li>
+        <li>Entire site's HTML validates as HTML5 (<a href="https://validator.w3.org">W3C HTML validator</a>).</li>
+        <li>CSS validates as CSS3 (<a href="https://jigsaw.w3.org/css-validator/">W3C CSS validator</a>).</li>
     </ul>
 @endsection
