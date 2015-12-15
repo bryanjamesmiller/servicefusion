@@ -1,19 +1,15 @@
 @extends('_base')
 
 @section('title')
-    List records | Service Fusion
+    Individual records | Service Fusion
 @endsection
 
 @section('header')
-    List all records
+    Individual records
 @endsection
 
 @section('content')
-        <p>First Name: {{ $record->firstname }}</p>
-        <p>Last Name: {{ $record->lastname }}</p>
-        <p>Date of Birth: {{ $record->birthday }}</p>
-        <p>Zip Code: {{ $record->zipcode }}</p>
-        <hr>
+    @include('records._single_record_output')
 @endsection
 
 @section('extra_js')
