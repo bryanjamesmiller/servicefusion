@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    {!! Form::model($record, array('method' => 'PATCH', 'url' => '/records/'.$record->id, $record->id)) !!}
+    {!! Form::model($record, array('method' => 'PATCH', 'url' => '/records/'.$record->id)) !!}
         @include('records._form_for_create_and_update', ['submit_button' => 'Save Changes'])
     {!! Form::close() !!}
 @endsection
