@@ -19,7 +19,7 @@
     <ul>
         <li>RESTful routing for CRUD functionality.</li>
         <li>Utilized the Blade templating engine to reduce repetition in HTML pages.</li>
-        <li>Javascript data validation and warnings for user input on both the create and update pages (public/js/custom.js).</li>
+        <li>Javascript data validation and warnings for user input on both the create and update pages (public/js/validation.js).</li>
         <li>Server-side data validation on both the create and update pages (<span class="allow_wrap">app/Http/Requests/UserRegistrationRequest.php</span>).  Try entering an invalid date to see the server-side input validation at work.</li>
         <li>Made use of the Google Maps API to produce some details about the zip codes that get entered (displayed on the <a href="http://servicefusion.grat.xyz/records">http://servicefusion.grat.xyz/records</a> page).</li>
         <li>Responsive design using Bootstrap 3 framework - try resizing <a href="http://servicefusion.grat.xyz/records">the "Complete list of records" page</a>, for example.</li>
